@@ -42,7 +42,7 @@ document.getElementById("select_color_cover").addEventListener('input', (event) 
 async function exportGLB(){
   const modelViewer = document.getElementById("normal");
   const glTF = await modelViewer.exportScene();
-  const file = new File([glTF], "export.glb");
+  const file = new File([glTF], "Alicia.glb");
   const link = document.createElement("a");
   link.download =file.name;
   link.href = URL.createObjectURL(file);
