@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Alicia fashion changer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head> 
+  <body>
+    <h1>Alicia<br>fashion changer
+    </h1>
+    <div class="main">
+      <model-viewer 
+                    id="normal"
+                    src="https://cdn.glitch.global/88f18675-5205-49a2-9359-f85e51409ba1/Alicia_GlbVari_DreTex7.glb?v=1678452032150"
+                    ios-src="https://cdn.glitch.global/88f18675-5205-49a2-9359-f85e51409ba1/Alicia_GlbVari_DreTex7.usdz?v=1678453366095"
+                    alt="Alicia_color"
+                    shadow-intensity="1"
+                    camera-controls
+                    touch-action="pan-y"
+                    ar
+                    >
+      </model-viewer>
+      <div class="fashion_color">
+        <p>髪　<input type="color" id="select_color_hair"></p>
+        <p>瞳　<input type="color" id="select_color_eye"></p>
+        <p>髪についてるキューブ　<input type="color" id="select_color_cube"></p>
+        <p>胸のリボン　<input type="color" id="select_color_ribbon"></p>
+        <p>スカートのレース　<input type="color" id="select_color_lace"></p>
+        <p>足のカバー　<input type="color" id="select_color_cover"></p>
+      </div>
+      <div class="export_botton">
+        <button onclick="exportGLB()">Export GLB</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+  </body>
+</html>
